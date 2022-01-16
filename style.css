@@ -1,0 +1,230 @@
+html,body{
+    width: 100%;
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:50px;
+    padding-bottom: 0px;
+}
+nav a{
+    text-decoration: none;
+    color: rgba(46, 45, 45, 0.897);
+    font-size: .95em;
+    font-weight:700 ;
+    margin:0px 15px;
+    font-family: 'Noto Sans', sans-serif;
+}
+nav>a>i{
+    font-size: 1.5em;
+    font-weight: 200;
+}
+header h1{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(46, 45, 45, 0.897);
+}
+a>i{
+    margin-left: 10px;
+}
+.blog h1{
+    font-size: 3em;
+    font-family: sans-serif;
+    font-weight:800 ;
+    color:rgba(46, 45, 45, 0.897); 
+}
+.blogs{
+     display: flex;
+
+}
+.blogs .blog{
+    width: 50%;
+    justify-content: space-evenly ;
+    align-content: center;
+    margin-left: 30px;
+    padding: 3%;
+    margin-top: 0px;
+
+}
+.blog img{
+    margin-left: 15px;
+    width: 100%;
+}
+.blog p{
+    color: rgba(46, 45, 45, 0.897);
+    font-size: 1em;
+    font-weight:700 ;
+    margin-right: 15px;
+    font-family: 'Noto Sans', sans-serif;
+    
+
+}
+.blog a{
+    background-image: linear-gradient(rgb(207, 23, 131), rgba(206, 14, 62, 0.856));
+    padding:10px 25px 10px 15px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 550;
+    font-family:'Poppins' ,sans-serif ;
+    margin-top: 30px;
+    display: inline-block;
+}
+hr{
+    color: lightsteelblue;
+    width: 80%;
+    justify-content: center;
+    
+}
+.logos .logo{
+    display:flex;
+    justify-content: center;
+}
+.logo img{
+    margin: 0px 20px;
+}
+.grid-container{
+    padding: 10px;
+}
+.grid-h2{
+    display: flex;
+    justify-content: center;
+    font-family:'Noto Sans', sans-serif ;
+    font-size:2em;
+    font-weight: 600;
+    margin-bottom: 0px;
+    padding-top:20px ;
+
+}
+.grid{
+    display: grid;
+    margin: 10%;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px 25px;
+}
+.grid-item{
+    border-radius:15px;
+    box-shadow: 3px 3px 10px rgba(127, 135, 143, 0.664);
+    padding: 15px 0 10px 18px;
+    font-family:'Poppins' ,sans-serif ;
+    width: 100%;
+
+}
+.grid-item img{
+    
+    width: 95%;
+    
+
+}
+.grid-item i{
+    color: rgb(255, 115, 0);
+
+}
+.grid-item span{
+    margin-left: 10px;
+}
+.grid-item h2{
+    font-weight: 200;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.grid-item p{
+    margin-top: 0px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.541);
+    
+}
+footer{
+    background-color: rgba(3, 3, 36, 0.932);
+    width: 100%;
+    margin: 0;
+    padding: 20px 0 20px 0;
+    color: blanchedalmond;
+    font-family: 'Noto Sans', sans-serif;
+}
+footer div{
+    
+    text-align: center;
+}
+footer>div>i{
+    font-size: 1.5em;
+}
+.footer-logo{
+    text-align: center;
+}
+@media only screen and (max-width:688px){
+    nav{
+        display: none;
+    }
+    .blogs{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
+    }
+    .blog{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: 10px 0 20px 0;
+    }
+    .logo{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .logos{
+        max-width: 100%;
+    }
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0px;
+        width: 70%;
+    }
+    .grid-h2{
+        width:100% ;
+    }
+
+    .blog p,.blog img{
+        width: 100%;
+        margin: 0px;
+        
+        
+    }
+    .blog h1{
+        font-size: 2em;
+    }
+    footer>div>i{
+        margin: 10px;
+        
+     
+    }
+    
+    
+    
+}
+@media only screen and (min-width:689px) and (max-width:992px) {
+    nav{
+        display: none;
+    }
+    .logo{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .logos{
+        max-width: 100%;
+    }
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+        /* margin-left: 12%; */
+        width:80%;
+        gap: 20px 100px;
+    
+}
+
